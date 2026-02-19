@@ -1,0 +1,33 @@
+# Build objects and intermediates
+*.o
+*.ko
+*.mod.c
+*.order
+*.symvers
+*.dwo
+*.su
+.*.cmd
+.tmp_versions/
+
+# Build Output directory (since you used O=out)
+out/
+
+# Kernel binaries
+arch/arm64/boot/Image
+arch/arm64/boot/Image.gz
+arch/arm64/boot/Image.gz-dtb
+arch/arm64/boot/dts/**/*.dtb
+
+# Editor backups and system files
+*~
+\#*#
+.DS_Store
+.vscode/
+.idea/
+
+# Scripts and tools generated during build
+scripts/basic/fixdep
+scripts/basic/bin2c
+scripts/kallsyms
+scripts/mod/mk_elfconfig
+scripts/mod/modpost
